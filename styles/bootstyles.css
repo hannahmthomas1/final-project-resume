@@ -1,0 +1,158 @@
+:root {
+  --heading-red: #864226;
+  --faded-orange: #eab56fe0;
+  --super-faded-orange: #eab56f8a;
+  --heading-blackish: #252323;
+  --light-yellow: #f6e1c5;
+  --my-green: #2f3e3c;
+  --light-green: #697463;
+  --faded-green: #697463e3;
+}
+.text-primary {
+  color: var(--heading-red) !important;
+}
+
+.text-faded {
+  color: var(--heading-blackish);
+}
+
+body.tableau-body {
+  background-image: url("../images/tableau-bg.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.tableau-body H1 {
+  color: var(--heading-red);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 80px;
+}
+
+main.tableau-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  flex-shrink: 1;
+}
+
+.tableau-main p,
+.tableau-main h2,
+.tableau-main h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(47, 23, 15);
+}
+
+.tableau-main p {
+  font-size: large;
+}
+
+.tableau-main a {
+  color: var(--heading-red);
+  text-decoration: none;
+}
+
+.tableau-main a:hover {
+  color: var(--my-green);
+}
+
+/* Tableau Navigation bar */
+.tableau-nav {
+  background: rgba(47, 23, 15, 0.9);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.tableau-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 3rem;
+}
+
+.tableau-nav a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 2.5;
+  margin-top: 1rem;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+.tableau-nav a::after {
+  content: "";
+  width: calc(100% + 30px);
+  height: 3px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 3px;
+  margin-left: -15px;
+  transform: scale(0);
+  transition: transform 300ms ease;
+  transform-origin: left;
+}
+
+.tableau-nav a:hover::after {
+  transform: scale(1);
+}
+
+/* tableau intro */
+.tableau-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--super-faded-orange);
+  border-radius: 20px;
+}
+
+.tableau-intro p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* links list*/
+.tableau-main li {
+  font-size: 20px;
+  list-style: none;
+}
+
+.tableau-main li::before {
+  content: "\2022";
+  color: var(--heading-red);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* charts */
+.tableau-chart {
+  flex: 1 1 auto;
+}
+
+/* tableau footer */
+.tableau-footer {
+  background: var(--my-green);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.tableau-footer p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--light-yellow);
+  text-transform: uppercase;
+}

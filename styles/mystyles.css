@@ -1,0 +1,118 @@
+:root {
+  --heading-red: #864226;
+  --faded-orange: #eab56fe0;
+  --super-faded-orange: #eab56f8a;
+  --heading-blackish: #252323;
+  --light-yellow: #f6e1c5;
+  --my-green: #2f3e3c;
+  --light-green: #697463;
+  --faded-green: #697463e3;
+}
+
+body {
+  background-image: url("../images/bgd.jpg");
+}
+
+h2.section-heading .section-description {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+/* Heading */
+.text-primary {
+  color: var(--heading-red) !important;
+}
+
+.text-faded {
+  color: var(--heading-blackish);
+}
+
+/* Section Box on Home Page*/
+.cta {
+  background-color: var(--faded-green);
+}
+
+/* Footer Text */
+.footer.text-faded {
+  color: var(--light-yellow);
+}
+
+/* Home page link/button */
+.btn-xl {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Resume page link */
+a.fb-video-link {
+  color: var(--light-green);
+}
+
+a.fb-video-link:hover {
+  color: var(--my-green);
+  text-decoration: underline;
+}
+
+.resume-nav {
+  background: var(--light-yellow);
+  height: 3rem;
+}
+
+.resume-nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin-right: 95px;
+}
+
+.resume-nav a {
+  text-decoration: none;
+  color: var(--heading-red);
+  margin-top: 4px;
+}
+
+/* Education tab */
+.education-box {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.education-text-wrapper p,
+.education-text-wrapper ul,
+.education-text-wrapper ol {
+  font-size: 20px;
+  margin-top: 1rem;
+  text-transform: none;
+}
+
+/* About Me page */
+.contact-box {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.bg-faded-green {
+  background: var(--faded-green);
+}
+
+.contact-text-wrapper {
+  color: var(--light-yellow);
+  font-size: 20px;
+  margin-top: 1rem;
+  text-transform: none;
+}
+
+.contact-text-wrapper p {
+  text-transform: lowercase;
+}
+
+.contact-text-wrapper .section-description {
+  line-height: 4rem;
+}
+
+.about-video {
+  margin-left: 30%;
+}
